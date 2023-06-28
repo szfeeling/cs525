@@ -4,18 +4,25 @@
 int main(){
 
     if(createPageFile("../data/database.txt") == RC_OK){
-        printf("success\n");
+        printf("createPageFile test success\n");
     }
     else{
-        printf("fail\n");
+        printf("createPageFile test fail\n");
     }
 
     SM_FileHandle fHandle;
     if(openPageFile("../data/database.txt", &fHandle) == RC_OK){
-        printf("success\n");
+        printf("openPageFile test success\n");
     }
     else{
-        printf("fail\n");
+        printf("openPageFile test fail\n");
+    }
+
+    if(closePageFile(&fHandle) == RC_OK){
+        printf("closePageFile test success\n");
+    }
+    else{
+        printf("closePageFile test fail\n");
     }
 
     return 0;
