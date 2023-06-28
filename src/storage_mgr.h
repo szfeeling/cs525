@@ -6,7 +6,8 @@
 * handle data structures *
 *********************************************************** */
 typedef struct SM_FileHandle { 
-    char * fileName ; int totalNumPages; 
+    char * fileName ; 
+    int totalNumPages; 
     int curPagePos; 
     void * mgmtInfo ; 
 } SM_FileHandle; 
@@ -15,10 +16,10 @@ typedef char * SM_PageHandle;
 /* ***********************************************************
 * interface *
 *********************************************************** */
-/* m anipulating page files */ 
-extern void initStorageManager (void); 
-extern RC createPageFile(char * fileName ); 
-extern RC openPageFile(char * fileName , SM_FileHandle * fHandle); 
+/* manipulating page files */ 
+extern void initStorageManager(void); 
+extern RC createPageFile(char * fileName); 
+extern RC openPageFile(char * fileName, SM_FileHandle * fHandle); 
 extern RC closePageFile(SM_FileHandle * fHandle ); 
 extern RC destroyPageFile(char * fileName ); 
 /* reading blocks from disc */ 
