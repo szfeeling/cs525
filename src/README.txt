@@ -1,5 +1,8 @@
 CS525 Assignment1
 Team Members:
+(A20501494)Fei Wei	zwei26@hawk.iit.edu
+(A20500936)Jiao Zhu	jzhu71@hawk.iit.edu
+(A20476463)Hao Zeng hzeng7@hawk.iit.edu
 
 Goal:
 
